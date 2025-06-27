@@ -39,27 +39,32 @@ graph TD
   B --> F[DB - SQLite / PostgreSQL]
   B --> G[PDF / CSV Export Engine]
 ```
-🧮 Simulation Components
-✅ 1. Monte Carlo Simulator
-Random sampling of wind, descent rate, heading
+### 🧮 Simulation Components
+-✅ 1. Monte Carlo Simulator
 
-10,000+ iterations
+ - Random sampling of wind, descent rate, heading
 
-Outputs: Final points cloud → clustered → GeoJSON
+ - 10,000+ iterations
 
-✅ 2. Drift Model Engine
-Equation: P(t+1) = P(t) + V_aircraft + V_wind
+ - Outputs: Final points cloud → clustered → GeoJSON
 
-Uses wind altitude layers, descent rates
+- ✅ 2. Drift Model Engine
+  
+ - Equation:
+   $$
+   P(t+1) = P(t) + V_aircraft + V_wind
+   $$
 
-Outputs: Flight trail or search corridor
+ - Uses wind altitude layers, descent rates
 
-✅ 3. Bayesian Updater
-Formula: P(H|E) = (P(E|H) * P(H)) / P(E)
+ - Outputs: Flight trail or search corridor
 
-Evidence: Radar pings, debris
+- ✅ 3. Bayesian Updater
+ - Formula: P(H|E) = (P(E|H) * P(H)) / P(E)
 
-Updates prior zone → new posterior heatmap
+ - Evidence: Radar pings, debris
+
+ - Updates prior zone → new posterior heatmap
 
 🔌 RESTful API Endpoints (Planned)
 
