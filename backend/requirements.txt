@@ -1,0 +1,46 @@
+# Core FastAPI and web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+# Scientific computing and simulation
+numpy==1.24.3
+scipy==1.11.4
+pandas==2.0.3
+
+# Geospatial analysis
+geopandas==0.14.0
+shapely==2.0.2
+alphashape==1.3.0
+
+# Probabilistic modeling
+pymc3==3.11.5
+arviz==0.15.1
+
+# Data validation
+pydantic==2.5.0
+
+# Caching and database
+redis==5.0.1
+python-redis==0.1.4
+
+# Report generation
+reportlab==4.0.4
+matplotlib==3.7.2
+Pillow==10.0.1
+
+# Background tasks (optional)
+celery==5.3.4
+
+# HTTP client for external APIs
+httpx==0.25.2
+requests==2.31.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Additional utilities
+python-dateutil==2.8.2
+pytz==2023.3
